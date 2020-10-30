@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*.ext": "html",
+  },
+  "attr-value-not-empty": false
+}

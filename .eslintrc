@@ -1,0 +1,17 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "browser": false,
+    "node": true
+  },
+  "globals": {
+    "document": false,
+    "window": false,
+    "pageYOffset": false
+  },
+  "extends": "htmlacademy/node"
+}

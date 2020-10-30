@@ -1,0 +1,12 @@
+/* Main */
+@import "normalize.css";
+@import "fonts.css";
+@import "variables.css";
+@import "scaffolding.css";
+
+/* Blocks */
+@import "blocks/visually-hidden.css";
+@import "blocks/container.css";
+@import "blocks/header.css";
+@import "blocks/main.css";
+@import "blocks/footer.css";
