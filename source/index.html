@@ -278,15 +278,15 @@
         <div class="work__wrap">
           <!-- Кнопки -->
           <div class="work__buttons">
-            <button class="workers__button workers__button--prev button" type="button">
+            <button class="work__button work__button--prev button" type="button">
               <span class="visually-hidden">Предыдующий слайд</span>
-              <svg class="workers__icon" width="44" height="44" aria-hidden="true">
+              <svg class="work__icon" width="44" height="44" aria-hidden="true">
                 <use xlink:href="#icon-button"></use>
               </svg>
             </button>
-            <button class="workers__button workers__button--next button" type="button">
+            <button class="work__button work__button--next button" type="button">
               <span class="visually-hidden">Следующий слайд</span>
-              <svg class="workers__icon" width="44" height="44" aria-hidden="true">
+              <svg class="work__icon" width="44" height="44" aria-hidden="true">
                 <use xlink:href="#icon-button"></use>
               </svg>
             </button>
@@ -313,11 +313,298 @@
       </div>
     </section>
 
+    <section class="request">
+      <div class="request__container container">
+        <!-- Заголовок -->
+        <h2 class="reuqest__title title">Онлайн заявка</h2>
+        <!-- Форма -->
+        <form class="request__form">
+          <ul class="request__list">
+            <!-- Имя -->
+            <li class="request__item">
+              <label for="request-input">Введите вашем имя:</label>
+              <input class="request__input" id="request-input" name="name" type="text" placeholder="Андрей" required>
+            </li>
+            <!-- Телефон -->
+            <li class="request__item">
+              <label for="request-input">Ваш номер телефона</label>
+              <input class="request__input" id="request-phone" name="phone" type="tel" placeholder="+7 (000) 000-00-00"
+                required>
+            </li>
+            <!-- Выбор даты -->
+            <li class="request__item">
+              <label for="request-input">Выберите дату</label>
+              <input class="request__input" id="request-date" name="date" type="tel" placeholder="1 ноября 2020 г."
+                required>
+            </li>
+          </ul>
+          <!-- Отправка -->
+          <div class="request__wrap-submit">
+            <button class="request__submit" type="submit">Оставить заявку</button>
+            <p>*Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/" target="_blank">Персональных данных</a>
+            </p>
+          </div>
+          <!-- Скидка -->
+          <div class="request__wrap-discount">
+            <span>10%</span>
+            <p>Оставьте заявку на нашем сайте и получите скидку</p>
+          </div>
+        </form>
+      </div>
+    </section>
 
+    <section class="review">
+      <div class="review__container container">
+        <!-- Заголовок -->
+        <h2 class="review__title title">Отзывы клиентов</h2>
+        <!-- Слайдер -->
+        <div class="review__wrap">
+          <!-- Кнопки -->
+          <div class="review__buttons">
+            <button class="review__button review__button--prev button" type="button">
+              <span class="visually-hidden">Предыдующий слайд</span>
+              <svg class="review__icon" width="44" height="44" aria-hidden="true">
+                <use xlink:href="#icon-button"></use>
+              </svg>
+            </button>
+            <button class="review__button review__button--next button" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+              <svg class="review__icon" width="44" height="44" aria-hidden="true">
+                <use xlink:href="#icon-button"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- Слайды -->
+          <div class="review__slider">
+            <ul class="review__list">
+              <li class="review__item">
+                <!-- Аватар -->
+                <img src="img/review-avatar.jpg" alt="Королёв Сергей">
+                <!-- Отзыв -->
+                <blockquote class="review__blockquote">
+                  <cite>
+                    <span class="review__name">Королёв Сергей</span>
+                    <span class="review__city">г. Киров</span>
+                  </cite>
+                  <p>Делал полное бронирование кузова полиуретановой антигравийной плёнкой с эффектом самовосстановления
+                    UltraVision Ultimate+ TopCoat PPF Остался очень доволен результатом. Работа непростая и я тщательно
+                    выбирал у кого буду делать бронь. Ни разу не жалею, что выбрал центр.</p>
+                </blockquote>
+                <!-- Кнопка -->
+                <button class="review__more" type="button">Читать весь отзыв</button>
+                <!-- Галерея фото -->
+                <ul class="review__galery-list">
+                  <li class="review__galery-item">
+                    <a href="img/review-01.jpg"><img src="img/review-01.jpg" width="151" height="105" alt="Автомобиль"></a>
+                  </li>
+                  <li class="review__galery-item">
+                    <a href="img/review-02.jpg"><img src="img/review-02.jpg" width="151" height="105" alt="Автомобиль"></a>
+                  </li>
+                  <li class="review__galery-item">
+                    <a href="img/review-03.jpg"><img src="img/review-03.jpg" width="151" height="105" alt="Автомобиль"></a>
+                  </li>
+                  <li class="review__galery-item">
+                    <a href="img/review-04.jpg"><img src="img/review-04.jpg" width="151" height="105" alt="Автомобиль"></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Доты -->
+          <div class="review__dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="zone">
+      <div class="zone__container container">
+        <!-- Заголовок -->
+        <h2 class="zone__title title">Уютная зона ожидания для вашего удобства</h2>
+        <!-- Лид -->
+        <p class="zone__lead">В нашем тюнинг центре для Вас создана уютная зона ожидания с горячим кофе и просмотром ваших
+          любимых каналов</p>
+        <!-- Галерея фото -->
+        <ul class="zone__list">
+          <li class="zone__item">
+            <a href="img/zone-01.jpg"><img src="img/zone-01.jpg" alt="Зона отдыха"></a>
+          </li>
+          <li class="zone__item">
+            <a href="img/zone-02.jpg"><img src="img/zone-02.jpg" alt="Зона отдыха"></a>
+          </li>
+          <li class="zone__item">
+            <a href="img/zone-03.jpg"><img src="img/zone-03.jpg" alt="Зона отдыха"></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="contact__container container">
+        <!-- Заголовок -->
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <!-- Блок информации -->
+        <div class="contact__info">
+          <!-- Лого -->
+          <img class="contact__logo" src="img/logo-big.svg" alt="Логотип URBAN STYLE">
+          <!-- Адрес -->
+          <address class="contact__address">Производственная, 24Б</address>
+          <!-- Телефон -->
+          <a class="contact__phone" href="tel:+7 (8332) 43-17-17">+7 (8332) 43-17-17</a>
+          <!-- Время работы -->
+          <p class="contact__time">Ежедневно c 9:00 до 19:00</p>
+          <!-- Почта -->
+          <a class="contact__email" href="mailto:urbanstyle.43@yandex.ru">urbanstyle.43@yandex.ru</a>
+          <!-- Мессенджеры -->
+          <p class="contact__text">Связаться с нами:</p>
+          <ul class="contact__list">
+            <li class="contact__item">
+              <a class="contact__link" href="/">
+                <svg class="contact__icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="contact__item">
+              <a class="contact__link" href="/">
+                <svg class="contact__icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-viber"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- Кнопка -->
+          <button class="contact__button" type="button">Заказать звонок</button>
+        </div>
+      </div>
+      <!-- Карта -->
+      <div class="contact__map">
+        <img class="contact__map-image" src="img/contact-map.jpg" alt="Производственная, 24Б">
+      </div>
+      <!-- Яндекс карта -->
+      <div class="contact__yandex" id="map"></div>
+    </section>
+
+    <section class="about">
+      <div class="about__container container">
+        <!-- Заголовок -->
+        <h2 class="about__title title">тюнинг центр «Urban Style»
+          <br> — это все услуги для вашего автомобиля в одном месте!
+        </h2>
+        <!-- О центре -->
+        <div class="about__wrap">
+          <p>Наша миссия — это обслуживание клиентов по доступным ценам на качественно высоком уровне</p>
+          <p>Автомобильный тюнинг — это бесконечный источник усовершенствования и способ придать своему автомобилю
+            индивидуальность и уникальный характер. Благодаря профессионализму наших специалистов вы сможете доработать
+            штатные системы своего автомобиля, усовершенствовать его внешний вид и технические характеристики, что позволит
+            максимально использовать его возможности</p>
+          <button class="about__more" type="button">Показать полностью</button>
+        </div>
+        <!-- Изображение -->
+        <img class="about__image" src="img/about-center" alt="Тюнинг центр URBAN STYLE">
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__nav-wrap">
+        <!-- Логотип -->
+        <a href="/" class="footer__logo logo"><img class="logo__image" src="img/logo-big.svg" alt="Логотип URBAN STYLE"></a>
+        <!-- Навигация -->
+        <ul class="footer__nav">
+          <li class="footer__item">
+            <a class="footer__link" href="/">Услуги</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="/">Сотрудники</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="/">Наши работы</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="/">Контакты</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="/">О компании</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="/">Отзывы</a>
+          </li>
+        </ul>
+        <!-- Соцвети -->
+        <ul class="footer__social social">
+          <!-- Вконтакте -->
+          <li class="social__item">
+            <a class="social__link" href="/">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="#icon-vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <!-- Инстаграм -->
+          <li class="social__item">
+            <a class="social__link" href="/">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <!-- Фейсбук -->
+          <li class="social__item">
+            <a class="social__link" href="/">
+              <svg class="social__icon" width="32" height="32" aria-hidden="true">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Копирайт -->
+      <div class="footer__copyright">
+        <p>© 2020 Urban Style</p>
+        <a href="/">Политика конфиденциальности</a>
+        <a href="/">Разработано в <span>Вятка IT</span></a>
+      </div>
+    </div>
   </footer>
+
+  <section class="popup">
+    <!-- Закрыть попап -->
+    <button class="popup__close">
+      <span>Закрыть попап</span>
+      <svg class="popup__close-icon" width="22" height="22" aria-hidden="true">
+        <use xlink:href="#icon-close"></use>
+      </svg>
+    </button>
+    <!-- До отправки -->
+    <div class="popup__before">
+      <h2 class="popup__title">Заказать звонок</h2>
+      <form class="popup__form">
+        <ul>
+          <!-- Имя -->
+          <li>
+            <label class="popup__label" for="popup-name">Введите вашем имя:</label>
+            <input class="popup__input" id="popup-name" name="name" type="text" placeholder="Андрей" required>
+          </li>
+          <!-- Телефон -->
+          <li>
+            <label class="popup__label" for="popup-name">Ваш номер телефона</label>
+            <input class="popup__input" id="popup-phone" name="name" type="tel" placeholder="+7 (000) 000-00-00" required>
+          </li>
+        </ul>
+        <!-- Отправка -->
+        <button class="popup__submit" type="submit">Перезвоните мне</button>
+        <p href="popup__consent">*Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/"
+            target="_blank">Персональных данных</a></p>
+      </form>
+    </div>
+    <!-- После отправки -->
+    <div class="popup__after">
+      <h2 class="popup__title">Успешно!</h2>
+      <p class="popup__text">Мы уже получили запрос и в ближайшее время перезвоним Вам Пожалуйста, оставайтесь на связи!</p>
+      <button class="popup__button">Хорошо, спасибо</button>
+    </div>
+  </section>
 
   <script src="js/main.min.js"></script>
 </body>
