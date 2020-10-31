@@ -31,9 +31,289 @@
   </div>
 
   <header class="header">
+    <div class="header__container container">
+      <!-- Логотип -->
+      <a class="header__logo logo">
+        <picture>
+          <source media="(max-width: 768px)" srcset="img/logo-small.svg">
+          <img class="logo__image logo__image--header" src="img/logo-big.svg" alt="Логотип URBAN STYLE">
+        </picture>
+      </a>
+      <!-- Описание лого -->
+      <p class="header__about">Тюнинг центр</p>
+      <!-- Открыть меню -->
+      <button class="header__main-nav-open" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!-- Навигация по странице -->
+      <nav class="header__main-nav main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Услуги</a>
+            <a class="main-nav__link" href="#">Сотрудники</a>
+            <a class="main-nav__link" href="#">Наши работы</a>
+            <a class="main-nav__link" href="#">Отзывы</a>
+            <a class="main-nav__link" href="#">О компании</a>
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Обёртка -->
+      <div class="header__wrap">
+        <!-- Адрес -->
+        <address class="header__address">Производственная, 24Б</address>
+        <!-- Контакты -->
+        <div class="header__wrap-contact">
+          <p class="header__contact-text">Связаться с нами:</p>
+          <!-- Мессенджеры -->
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="/">
+                <span class="visually-hidden">Whatsapp</span>
+                <svg class="header__icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="/">
+                <span class="visually-hidden">Viber</span>
+                <svg class="header__icon" width="24" height="24" aria-hidden="true">
+                  <use xlink:href="#icon-viber"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <!-- Номер и время работы -->
+          <div class="header__wrap-phone">
+            <a href="tel:+7 (8332) 43-17-17">+7 (8332) 43-17-17</a>
+            <p>Ежедневно c 9:00 до 19:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Навигация по страницам -->
+    <div class="header__nav-wrap">
+      <div class="header__nav-container container">
+        <!-- Навигация -->
+        <nav class="header__nav nav">
+          <!-- Открыть список с навигацией -->
+          <button class="nav__button-open" type="button">
+            Выбрать страницу
+            <svg class="nav__icon" width="16" height="16" aria-hidden="true">
+              <use xlink:href="#icon-nav-arrow"></use>
+            </svg>
+          </button>
+          <!-- Навигация -->
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Оклейка кузова</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Шумоизоляция</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Тонировка</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Установка сигнализации</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Автозвук</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Детейлинг</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <main class="main">
+    <h1 class="visually-hidden">Сайт профессионального тюнинг центра URBAN STYLE</h1>
+
+    <!-- Превью -->
+    <section class="preview">
+      <h2 class="visually-hidden">Превью тюнинг центра</h2>
+      <div class="preview__container container">
+        <!--  -->
+        <div class="preview__wrap">
+          <!-- Лид -->
+          <p class="preview__lead">Профессиональный тюнинг центр</p>
+          <p class="preview__text">Работаем с автомобилями <br> от бюджетного до премиум класса</p>
+          <!-- Список информации -->
+          <ul class="preview__list">
+            <li class="preview__item">
+              <p class="preview__text">Работаем со всеми марками автомобилей</p>
+              <picture>
+                <source type="image/webp" srcset="img/preview-car-brand.webp, img/preview-car-brand.webp 2x">
+                <img class="preview__image" src="img/preview-car-brand.png" srcset="img/preview-car-brand.png 2x"
+                  alt="Марки автомобилей">
+              </picture>
+            </li>
+            <li class="preview__item">
+              <p class="preview__text">Официальная гарантия на все работы и запчасти</p>
+              <picture>
+                <source type="image/webp" srcset="img/preview-document.webp, img/preview-document.webp 2x">
+                <img class="preview__image" src="img/preview-document.png" srcset="img/preview-document.png 2x"
+                  alt="Документ гарантии">
+              </picture>
+            </li>
+            <li class="preview__item">
+              <p class="preview__text">Используем только новые инструемнты и современные технологии</p>
+              <picture>
+                <source type="image/webp" srcset="img/preview-rupes.webp, img/preview-rupes.webp 2x">
+                <img class="preview__image" src="img/preview-rupes.png" srcset="img/preview-rupes.png 2x" alt="Инструмент">
+              </picture>
+            </li>
+          </ul>
+        </div>
+        <!-- Форма квиз -->
+        <div class="preview__form quiz">
+          <h3 class="quiz__title">Узнайте стоимость работ прямо сейчас, ответив на 3 вопроса</h3>
+          <p class="quiz__subtitle">Тест займёт не больше минуты</p>
+          <p class="quiz__bonus">В подарок <b>бесплатный</b> осмотр и <b>скидка 10%</b> на все виды
+            работ</p>
+          <button class="quiz__button" type="button">Узнать стоимость</button>
+          <p class="quiz__text">Или просто позвоните нам</p>
+          <a href="tel:+7 (8332) 43-17-17">+7 (8332) 43-17-17</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="service">
+      <div class="service__container container">
+        <!-- Заголовок -->
+        <h2 class="service__title title">Услуги URBAN <span>STYLE</span></h2>
+        <!-- Лид -->
+        <p class="service__lead">На все услуги нашего тюнинг центра предоставляется официальная гарантия</p>
+        <!-- Список услуг -->
+        <ul class="service__list">
+          <li class="service__item">
+            <h3>Оклейка кузова</h3>
+            <img src="img/service-01.jpg" alt="Услуга">
+          </li>
+          <li class="service__item">
+            <h3>Шумоизоляция</h3>
+            <img src="img/service-02.jpg" alt="Услуга">
+          </li>
+          <li class="service__item">
+            <h3>Тонировка</h3>
+            <img src="img/service-03.jpg" alt="Услуга">
+          </li>
+          <li class="service__item">
+            <h3>Установка сигнализации</h3>
+            <img src="img/service-04.jpg" alt="Услуга">
+          </li>
+          <li class="service__item">
+            <h3>Автозвук</h3>
+            <img src="img/service-05.jpg" alt="Услуга">
+          </li>
+          <li class="service__item">
+            <h3>Детейлинг</h3>
+            <img src="img/service-06.jpg" alt="Услуга">
+          </li>
+        </ul>
+        <!-- Форма -->
+        <div class="service__wrap">
+          <div class="service__form">
+            <p class="service__form-text">Узнайте стоимость работ прямо сейчас, ответив на 3 простых вопроса</p>
+            <button class="service__button" type="button">Узнать стоимость</button>
+          </div>
+          <p class="service__text">*В подарок <b>бесплатный</b> осмотр и <b>скидка 10%</b> на все виды работ</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="workers">
+      <div class="workers__container container">
+        <!-- Заголовок -->
+        <h2 class="workers__title title">Сотрудники тюнинг центра</h2>
+        <!-- Лид -->
+        <p class="workers__lead">В нашем тюнинг центре работают профессионалы своего дела с многолетним стажем работы.
+          Каждый сотрудник нашего центра повышает квалификацию у лучших производителей</p>
+      </div>
+      <!-- Слайдер -->
+      <div class="workers__wrap">
+        <!-- Кнопки -->
+        <div class="workers__buttons">
+          <button class="workers__button workers__button--prev button" type="button">
+            <span class="visually-hidden">Предыдующий слайд</span>
+            <svg class="workers__icon" width="44" height="44" aria-hidden="true">
+              <use xlink:href="#icon-button"></use>
+            </svg>
+          </button>
+          <button class="workers__button workers__button--next button" type="button">
+            <span class="visually-hidden">Следующий слайд</span>
+            <svg class="workers__icon" width="44" height="44" aria-hidden="true">
+              <use xlink:href="#icon-button"></use>
+            </svg>
+          </button>
+        </div>
+        <!-- Слайды -->
+        <div class="workers__slider">
+          <ul class="workers__list">
+            <li class="workers__item">
+              <h3>Чертков Александр</h3>
+              <p>Автоэлектрик</p>
+              <img src="img/workers-01.png" alt="Сотрудник">
+            </li>
+            <li class="workers__item">
+              <h3>Скутин Василий</h3>
+              <p>Тонировщик</p>
+              <img src="img/workers-02.png" alt="Сотрудник">
+            </li>
+            <li class="workers__item">
+              <h3>Глушков Владимир</h3>
+              <p>Специалист по установке дополнительного оборудования</p>
+              <img src="img/workers-03.png" alt="Сотрудник">
+            </li>
+            <li class="workers__item">
+              <h3>Бакулев Дмитрий</h3>
+              <p>Специалист по установке дополнительного оборудования</p>
+              <img src="img/workers-04.png" alt="Сотрудник">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="work">
+      <div class="work__container container">
+        <!-- Заголовок -->
+        <h2 class="work__title title">Наши работы говорят сами за себя</h2>
+        <!-- Слайдер -->
+        <div class="work__wrap">
+          <!-- Кнопки -->
+          <div class="work__buttons">
+            <button class="workers__button workers__button--prev button" type="button">
+              <span class="visually-hidden">Предыдующий слайд</span>
+              <svg class="workers__icon" width="44" height="44" aria-hidden="true">
+                <use xlink:href="#icon-button"></use>
+              </svg>
+            </button>
+            <button class="workers__button workers__button--next button" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+              <svg class="workers__icon" width="44" height="44" aria-hidden="true">
+                <use xlink:href="#icon-button"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="work__slider">
+            <ul class="work__list">
+              <li class="work__item">
+                <!-- До -->
+                <figure class="work__figure">
+                  <img class="work__figure-image" src="img/work-before.jpg" alt="Машина до обслуживания">
+                  <figcaption class="work__figcaption">До</figcaption>
+                </figure>
+                <!-- После -->
+                <figure class="work__figure">
+                  <img class="work__figure-image" src="img/work-after.jpg" alt="Машина после обслуживания">
+                  <figcaption class="work__figcaption">После</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+          <!-- Доты -->
+          <div class="work__dots"></div>
+        </div>
+      </div>
+    </section>
+
+
   </main>
 
   <footer class="footer">
