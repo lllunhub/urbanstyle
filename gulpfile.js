@@ -5,6 +5,7 @@ import include from "posthtml-include";
 import rename from "gulp-rename";
 import browsersync from "browser-sync";
 import postcss from "gulp-postcss";
+import coloralfa from 'postcss-color-alpha';
 import sourcemap from "gulp-sourcemaps";
 import pimport from "postcss-import";
 import autoprefixer from "autoprefixer";
@@ -32,7 +33,12 @@ export const css = () => {
   return gulp
     .src(`source/css/style.css`)
     .pipe(sourcemap.init())
-    .pipe(postcss([pimport, autoprefixer, csso]))
+    .pipe(postcss([
+      pimport,
+      coloralfa,
+      autoprefixer,
+      csso
+    ]))
     .pipe(rename(`style.min.css`))
     .pipe(sourcemap.write(`.`))
     .pipe(gulp.dest(`build/css`))
