@@ -8,5 +8,13 @@
 @import "blocks/visually-hidden.css";
 @import "blocks/container.css";
 @import "blocks/header.css";
+@import "blocks/main-nav.css";
+@import "blocks/nav.css";
 @import "blocks/main.css";
+@import "blocks/preview.css";
+@import "blocks/quiz.css";
+@import "blocks/title.css";
+@import "blocks/service.css";
+@import "blocks/workers.css";
+@import "blocks/work.css";
 @import "blocks/footer.css";

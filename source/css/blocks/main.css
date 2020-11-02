@@ -1,4 +1,6 @@
 /* Main */
 .main {
   overflow: hidden;
+
+  padding-top: 128px;
 }

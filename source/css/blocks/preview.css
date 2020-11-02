@@ -1,0 +1,135 @@
+/* Preview */
+.preview {
+  padding-top: 150px;
+  padding-bottom: 180px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.webp .preview {
+  background-image: url("../img/preview-background.webp");
+}
+
+.no-webp .preview {
+  background-image: url("../img/preview-background.jpg");
+}
+
+/* Container */
+.preview__container {
+  display: grid;
+  grid-template-columns: 1fr minmax(280px, 337px);
+  grid-column-gap: 20px;
+  align-items: center;
+}
+
+/* Wrap */
+.preview__wrap {
+  display: grid;
+}
+
+/* Lead */
+.preview__title {
+  margin: 0;
+  margin-bottom: 14px;
+
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 48px;
+  font-family: var(--ProximaNova);
+  line-height: 120%;
+  letter-spacing: .01em;
+}
+
+/* Text */
+.preview__lead {
+  margin: 0;
+  margin-bottom: 60px;
+
+  font-weight: 300;
+  font-size: 48px;
+  font-family: var(--ProximaNova);
+  line-height: 120%;
+  letter-spacing: .01em;
+}
+
+/* List */
+.preview__list {
+  display: grid;
+  grid-template-columns: repeat(3, 249px);
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  text-align: center;
+}
+
+/* Item */
+.preview__item {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 10px;
+
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .2);
+
+  transform: translateX(0) skew(-7deg);
+}
+
+.preview__item:nth-child(2) {
+  transform: translateX(-45px) skew(-7deg);
+}
+
+.preview__item:nth-child(3) {
+  align-items: center;
+
+  transform: translateX(-90px) skew(-7deg);
+}
+
+/* Text */
+.preview__text {
+  margin: 0;
+  padding-top: 16px;
+
+  color: rgba(51, 51, 51, .8);
+
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 160%;
+  text-align: center;
+
+  transform: skew(7deg);
+}
+
+.preview__item:nth-child(1) .preview__text {
+  max-width: 180px;
+  margin-bottom: 12px;
+  margin-left: 10px;
+}
+
+.preview__item:nth-child(2) .preview__text {
+  max-width: 190px;
+  margin-left: 10px;
+}
+
+.preview__item:nth-child(3) .preview__text {
+  max-width: 222px;
+}
+
+/* Image */
+.preview__image {
+  transform: skew(7deg);
+}
+
+.preview__item:nth-child(1) .preview__image {
+  margin-left: 25px;
+}
+
+.preview__item:nth-child(2) .preview__image {
+  margin-left: 50px;
+}

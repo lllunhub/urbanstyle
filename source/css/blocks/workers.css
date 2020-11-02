@@ -1,0 +1,143 @@
+/* Workers */
+.workers {
+  padding-bottom: 120px;
+
+  background-image: url("../img/workers-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.webp .workers {
+  background-image: url("../img/workers-background.webp");
+}
+
+.no-webp .workers {
+  background-image: url("../img/workers-background.jpg");
+}
+
+/* Container */
+.workers__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+/* Title */
+.workers__title {
+  max-width: 350px;
+}
+
+/* Lead */
+.workers__lead {
+  align-self: end;
+  justify-self: end;
+
+  max-width: 562px;
+  margin: 0;
+
+  color: #fff.8;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: right;
+}
+
+/* Wrap */
+.workers__wrap {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row-gap: 20px;
+
+  padding-top: 30px;
+}
+
+/* Buttons */
+.workers__buttons {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-column-gap: 20px;
+  justify-self: end;
+
+  max-width: 108px;
+}
+
+/* Button */
+.workers__button {
+  display: grid;
+  align-self: center;
+
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.workers__button--next {
+  transform: rotate(180deg);
+}
+
+/* Icon */
+.workers__icon {
+  pointer-events: none;
+
+  fill: none;
+}
+
+/* Slider */
+.workers__slider {
+  overflow: hidden;
+}
+
+/* List */
+.workers__list {
+  display: grid;
+  grid-template-columns: repeat(100, 294px);
+
+  grid-column-gap: 14px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* Item */
+.workers__item {
+  display: grid;
+  align-content: start;
+  justify-items: center;
+
+  padding: 15px 5px;
+
+  border: 2px solid #515151;
+  border-radius: 6px;
+}
+
+.workers__item h3 {
+  margin: 0;
+  margin-bottom: 6px;
+
+  font-weight: 600;
+  font-size: 26px;
+  font-family: var(--ProximaNova);
+  line-height: 32px;
+  text-align: center;
+}
+
+.workers__item p {
+  margin: 0;
+
+  color: #fff.7;
+
+  font-size: 15px;
+  line-height: 160%;
+  text-align: center;
+}
+
+.workers__item img {
+  order: -1;
+}

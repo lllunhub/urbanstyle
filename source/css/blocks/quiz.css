@@ -1,0 +1,156 @@
+/* Quize */
+.quiz {
+  display: grid;
+
+  padding: 30px 20px;
+  border-radius: 10px;
+
+  background-color: #181818;
+}
+
+/* Title */
+.quiz__title {
+  position: relative;
+
+  justify-self: center;
+
+  max-width: 215px;
+  margin: 0;
+  margin-bottom: 12px;
+  padding-top: 80px;
+
+  color: #fff;
+
+  font-weight: 700;
+  font-size: 18px;
+  font-family: var(--ProximaNova);
+  line-height: 22px;
+  text-align: center;
+}
+
+.quiz__title::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.webp .quiz__title::before {
+  content: url("../img/preview-car.webp");
+}
+
+.no-webp .quiz__title::before {
+  content: url("../img/preview-car.png");
+}
+
+/* Subtitle */
+.quiz__subtitle {
+  margin: 0;
+  margin-bottom: 24px;
+
+  color: #fff.8;
+
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+}
+
+/* Bonus */
+.quiz__bonus {
+  position: relative;
+
+  justify-self: center;
+
+  width: 100%;
+  max-width: 288px;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 12px 20px;
+  border: 1px solid #292929;
+  border-radius: 6px;
+
+  color: #fff.8;
+
+  font-size: 14px;
+  line-height: 160%;
+  text-align: center;
+}
+
+.quiz__bonus::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -18px;
+
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+
+  background-color: #fd1919;
+}
+
+.quiz__bonus::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: -9px;
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../img/preview-gift.svg");
+  background-repeat: no-repeat;
+}
+
+.quiz__bonus b {
+  color: #fff;
+
+  font-weight: 500;
+}
+
+/* Button */
+.quiz__button {
+  justify-self: center;
+
+  width: 100%;
+  max-width: 288px;
+  margin-bottom: 10px;
+  padding: 24px;
+  border: none;
+  border-radius: 6px;
+
+  background: linear-gradient(180deg, #fd1919 0%, #ea0d0d 100%);
+  color: #fff;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+/* Text */
+.quiz__text {
+  margin: 0;
+  margin-bottom: 6px;
+
+  color: #fff.8;
+
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+}
+
+/* Phone */
+.quiz__phone {
+  color: #fff.8;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-decoration: none;
+}

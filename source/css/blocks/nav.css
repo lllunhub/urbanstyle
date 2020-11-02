@@ -1,0 +1,33 @@
+/* Nav */
+.nav {
+  display: grid;
+}
+
+/* Button Open */
+.nav__button-open {
+  display: none;
+}
+
+/* List */
+.nav__list {
+  display: grid;
+  grid-template-columns: repeat(6, max-content);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* Link */
+.nav__link {
+  color: inherit;
+
+  font-size: 18px;
+  line-height: 22px;
+
+  text-decoration: none;
+}

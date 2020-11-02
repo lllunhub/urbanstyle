@@ -1,6 +1,7 @@
 (() => {
   const mainNavOpen = document.querySelector(`.header__main-nav-open`);
   const mainNav = document.querySelector(`.main-nav`);
+  const mainNavOpenSpan = mainNavOpen.children[2];
 
   mainNav.classList.add(`visually-hidden`);
   mainNav.inert = true;
@@ -13,12 +14,14 @@
   }
 
   function openNavMenu() {
+    mainNavOpenSpan.style.width = `30px`;
     mainNav.classList.remove(`visually-hidden`);
     mainNav.inert = false;
     document.addEventListener(`keydown`, onNavMenuEscPress);
   }
 
   function closeNavMenu() {
+    mainNavOpenSpan.style.width = `20px`;
     mainNav.classList.add(`visually-hidden`);
     mainNav.inert = true;
     document.removeEventListener(`keydown`, onNavMenuEscPress);
@@ -36,8 +39,8 @@
   const navButtonOpen = document.querySelector(`.nav__button-open`);
   const navList = document.querySelector(`.nav__list`);
 
-  navList.classList.add(`visually-hidden`);
-  navList.inert = true;
+  // navList.classList.add(`visually-hidden`);
+  // navList.inert = true;
 
   function onNavEscPress(e) {
     if (e.key === `Escape`) {
