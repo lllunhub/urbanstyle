@@ -1,1 +1,83 @@
 /* Footer */
+.footer {
+  margin-top: -92px;
+  padding-bottom: 30px;
+}
+
+/* Container */
+.footer__container {
+  display: grid;
+  grid-row-gap: 15px;
+}
+
+/* Nav Wrap */
+.footer__nav-wrap {
+  display: grid;
+  grid-template-columns: max-content minmax(280px, 705px) max-content;
+  grid-column-gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.footer__logo {
+  display: grid;
+
+  margin-top: -8px;
+}
+
+/* Nav */
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+
+  margin-right: -15px;
+  margin-left: 15px;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* Item */
+.footer__item {
+  margin: 5px 15px;
+}
+
+/* Link */
+.footer__link {
+  color: #fff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+/* Copyright */
+.footer__copyright {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-column-gap: 20px;
+  justify-content: space-between;
+}
+
+.footer__copyright p {
+  margin: 0;
+
+  color: #fff.7;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.footer__copyright a {
+  color: #fff.7;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+}

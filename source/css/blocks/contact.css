@@ -1,0 +1,199 @@
+/* Contact */
+.contact {
+  position: absolute;
+
+  overflow: hidden;
+
+  width: 100%;
+
+  min-height: 572px;
+  margin-top: -380px;
+
+  padding: 50px 0;
+}
+
+/* Container */
+.contact__container {
+  position: relative;
+  z-index: 3;
+
+  display: grid;
+
+  max-width: 1100px;
+}
+
+/* Info */
+.contact__info {
+  display: grid;
+  justify-items: center;
+  justify-self: start;
+
+  width: 100%;
+  max-width: 360px;
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+  background: #181818;
+}
+
+/* Logo */
+.contact__logo {
+  margin-bottom: 40px;
+}
+
+/* Address */
+.contact__address {
+  position: relative;
+
+  margin-bottom: 20px;
+
+  padding-left: 32px;
+
+  color: #fff;
+
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact__address::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url("../img/map-pin.svg");
+  background-repeat: no-repeat;
+
+  transform: translateY(-50%);
+}
+
+/* Phone */
+.contact__phone {
+  margin-bottom: 6px;
+
+  color: #fff;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Time */
+.contact__time {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding-left: 8px;
+
+  color: #fff.8;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+}
+
+.contact__time::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #3bfd37;
+
+  transform: translateY(-50%);
+}
+
+/* Email */
+.contact__email {
+  margin-bottom: 30px;
+
+  color: #fff;
+
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Text */
+.contact__text {
+  margin: 0;
+  margin-bottom: 20px;
+
+  color: #fff;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  opacity: .8;
+}
+
+/* List */
+.contact__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 24px);
+  grid-column-gap: 12px;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 204px;
+
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* Link */
+.contact__link {
+  display: grid;
+}
+
+/* Button */
+.contact__button {
+  width: 100%;
+  max-width: 288px;
+  padding: 24px;
+  border: none;
+  border-radius: 6px;
+
+  background: linear-gradient(180deg, #fd1919 0%, #ea0d0d 100%);
+  color: #fff;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+/* Map */
+.contact__map {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+
+  width: 1478px;
+  height: 100%;
+
+  transform: translateX(-50%);
+}

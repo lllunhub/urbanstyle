@@ -1,6 +1,7 @@
 (() => {
   const workersList = document.querySelector(`.workers__slider`);
   const workList = document.querySelector(`.work__slider`);
+  const reviewList = document.querySelector(`.review__slider`);
 
   let slider1 = new Swiper(workersList, {
     slidesPerView: 4,
@@ -26,6 +27,22 @@
     navigation: {
       nextEl: `.work__button--next`,
       prevEl: `.work__button--prev`,
+    }
+  });
+
+  let slider3 = new Swiper(reviewList, {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    a11y: false,
+    loop: true,
+    pagination: {
+      el: `.review__dots`,
+      type: `bullets`,
+      clickable: true
+    },
+    navigation: {
+      nextEl: `.review__button--next`,
+      prevEl: `.review__button--prev`,
     }
   });
 })();

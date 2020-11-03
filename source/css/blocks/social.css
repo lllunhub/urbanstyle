@@ -1,0 +1,21 @@
+/* Social */
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 32px);
+  grid-column-gap: 16px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* Link */
+.social__link {
+  display: grid;
+}
+
+/* Icon */
+.social__icon {
+  fill: none;
+}

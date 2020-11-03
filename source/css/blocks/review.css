@@ -1,0 +1,209 @@
+/* Recall */
+.review {
+  padding-bottom: 120px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.webp .review {
+  background-image: url("../img/review-background.webp");
+}
+
+.no-webp .review {
+  background-image: url("../img/review-background.jpg");
+}
+
+/* Container */
+.review__container {
+  display: grid;
+  grid-row-gap: 64px;
+}
+
+/* Wrap */
+.review__wrap {
+  display: grid;
+  grid-template-rows:
+    auto
+    auto
+    auto;
+  grid-template-columns: minmax(44px, 74px) 1fr minmax(44px, 74px);
+  grid-column-gap: 30px;
+}
+
+/* Buttons */
+.review__buttons {
+  display: grid;
+  grid-template-columns: minmax(44px, 74px) 1fr minmax(44px, 74px);
+  grid-row: 1 / 3;
+  grid-column: 1 / -1;
+  grid-column-gap: 30px;
+}
+
+.review__button {
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.review__button--prev {
+  grid-column: 1 / 2;
+}
+
+.review__button--next {
+  grid-column: 3 / 4;
+
+  transform: rotate(180deg);
+}
+
+/* Icon */
+.review__icon {
+  pointer-events: none;
+
+  fill: none;
+}
+
+/* Slider */
+.review__slider {
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
+  overflow: hidden;
+
+  margin-bottom: 50px;
+}
+
+/* List */
+.review__list {
+  display: grid;
+
+  grid-template-columns: repeat(100, 100%);
+  grid-column-gap: 30px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+/* Item */
+.review__item {
+  display: grid;
+  grid-template-areas:
+    "i t"
+    ". l";
+  grid-row-gap: 20px;
+  grid-column-gap: 30px;
+  justify-self: center;
+
+  width: 100%;
+  max-width: 850px;
+  padding: 30px;
+  border-radius: 6px;
+
+  background-color: #fff;
+  box-shadow: 0 0 14px rgba(255, 0, 0, .26);
+}
+
+.review__item img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Blockquote */
+.review__blockquote {
+  display: grid;
+  grid-area: t;
+  grid-row-gap: 20px;
+
+  max-width: 654px;
+
+  margin: 0;
+}
+
+.review__blockquote cite {
+  display: grid;
+}
+
+.review__name {
+  margin-bottom: 10px;
+
+  color: #333;
+
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.review__city {
+  color: #333.4;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.review__blockquote p {
+  margin: 0;
+
+  color: #333;
+
+  font-size: 16px;
+  line-height: 180%;
+}
+
+.review__more {
+  justify-self: start;
+
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+  color: #333.4;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+
+  cursor: pointer;
+}
+
+.review__galery-list {
+  display: grid;
+  grid-area: l;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 14px;
+
+  width: 100%;
+  max-width: 646px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.review__galery-item a {
+  display: grid;
+}
+
+.review__galery-item img {
+  object-fit: cover;
+
+  border-radius: 0;
+}
+
+.review__dots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 8px);
+  grid-row: 3 / 4;
+  grid-column: 1 / -1;
+  grid-column-gap: 8px;
+  justify-content: center;
+
+  width: 100%;
+}

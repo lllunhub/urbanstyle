@@ -17,4 +17,10 @@
 @import "blocks/service.css";
 @import "blocks/workers.css";
 @import "blocks/work.css";
+@import "blocks/request.css";
+@import "blocks/review.css";
+@import "blocks/zone.css";
+@import "blocks/contact.css";
+@import "blocks/about.css";
 @import "blocks/footer.css";
+@import "blocks/social.css";

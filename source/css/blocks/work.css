@@ -21,11 +21,6 @@
   grid-row-gap: 80px;
 }
 
-/* Title */
-.work__title {
-  grid-column: 1 / -1;
-}
-
 /* Wrap */
 .work__wrap {
   display: grid;
@@ -154,18 +149,4 @@
   justify-content: center;
 
   width: 100%;
-}
-
-.swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-
-  background-color: #fff;
-
-  cursor: pointer;
-}
-
-.swiper-pagination-bullet-active {
-  background-color: #fd1919;
 }

@@ -68,7 +68,7 @@ select:-webkit-autofill:focus {
 
   transition: background-color 5000s ease-in-out 0s;
 
-  -webkit-text-fill-color: #393d43;
+  -webkit-text-fill-color: #fff;
 }
 
 input[type="number"] {
@@ -78,4 +78,31 @@ input[type="number"] {
 /* Focus */
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+/* Swiper Dots */
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+
+  background-color: #fff;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet:focus {
+  background-color: #868686;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fd1919;
+}
+
+.swiper-pagination-bullet-active:hover,
+.swiper-pagination-bullet-active:focus {
+  background-color: #fd1919;
 }
