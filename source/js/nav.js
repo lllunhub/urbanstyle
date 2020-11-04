@@ -38,6 +38,7 @@
 
   const navButtonOpen = document.querySelector(`.nav__button-open`);
   const navList = document.querySelector(`.nav__list`);
+  const navIcon = document.querySelector(`.nav__icon`);
 
   // navList.classList.add(`visually-hidden`);
   // navList.inert = true;
@@ -52,12 +53,14 @@
   function openNav() {
     navList.classList.remove(`visually-hidden`);
     navList.inert = false;
+    navIcon.style.transform = `rotate(-180deg)`;
     document.addEventListener(`keydown`, onNavEscPress);
   }
 
   function closeNav() {
     navList.classList.add(`visually-hidden`);
     navList.inert = true;
+    navIcon.style.transform = `rotate(0deg)`;
     document.removeEventListener(`keydown`, onNavEscPress);
   }
 

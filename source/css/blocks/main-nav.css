@@ -9,6 +9,12 @@
   margin-left: -20px;
 }
 
+@media (max-width: 685px) {
+  .main-nav {
+    top: 118px;
+  }
+}
+
 /* Nav List */
 .main-nav__list {
   display: grid;

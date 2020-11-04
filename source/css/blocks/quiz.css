@@ -8,6 +8,12 @@
   background-color: #181818;
 }
 
+@media (max-width: 1200px) {
+  .quiz {
+    justify-self: center;
+  }
+}
+
 /* Title */
 .quiz__title {
   position: relative;

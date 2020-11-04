@@ -8,6 +8,23 @@
   display: none;
 }
 
+@media (max-width: 960px) {
+  .nav__button-open {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-column-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+    border: none;
+
+    background-color: transparent;
+    color: #fff;
+
+    font-size: 18px;
+  }
+}
+
 /* List */
 .nav__list {
   display: grid;
@@ -20,6 +37,15 @@
   padding: 0;
 
   list-style: none;
+}
+
+@media (max-width: 960px) {
+  .nav__list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    padding-top: 20px;
+  }
 }
 
 /* Link */
