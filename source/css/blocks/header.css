@@ -234,6 +234,17 @@
   display: grid;
 }
 
+.header__icon {
+  color: #333;
+
+  transition: .3s;
+}
+
+.header__link:hover .header__icon,
+.header__link:focus .header__icon {
+  color: #fd1919;
+}
+
 /* Wrap Phone */
 .header__wrap-phone {
   display: grid;
@@ -307,4 +318,10 @@
 .header__nav-container {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+@media (max-width: 960px) {
+  .header__nav-container {
+    padding: 0;
+  }
 }

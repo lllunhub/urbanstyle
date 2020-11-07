@@ -2,7 +2,7 @@
   font-weight: 400;
   font-style: normal;
   font-family: "Montserrat";
-  src: local("Montserrat"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  src: local("Montserrat-Regular"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
 
   font-display: swap;
 }
@@ -11,7 +11,7 @@
   font-weight: 500;
   font-style: normal;
   font-family: "Montserrat";
-  src: local("Montserrat"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  src: local("Montserrat-Medium"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
 
   font-display: swap;
 }
@@ -20,7 +20,7 @@
   font-weight: 600;
   font-style: normal;
   font-family: "Montserrat";
-  src: local("Montserrat"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  src: local("Montserrat-SemiBold"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
 
   font-display: swap;
 }
@@ -29,7 +29,7 @@
   font-weight: 700;
   font-style: normal;
   font-family: "Montserrat";
-  src: local("Montserrat"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  src: local("Montserrat-Bold"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
 
   font-display: swap;
 }
@@ -38,7 +38,7 @@
   font-weight: 300;
   font-style: normal;
   font-family: "ProximaNova";
-  src: local("ProximaNova"), local("Proxima Nova"), url("../fonts/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light.woff") format("woff");
+  src: local("ProximaNova-Light"), url("../fonts/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light.woff") format("woff");
 
   font-display: swap;
 }
@@ -47,7 +47,7 @@
   font-weight: 400;
   font-style: normal;
   font-family: "ProximaNova";
-  src: local("ProximaNova"), local("Proxima Nova"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff");
+  src: local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff");
 
   font-display: swap;
 }
@@ -56,7 +56,7 @@
   font-weight: 600;
   font-style: normal;
   font-family: "ProximaNova";
-  src: local("ProximaNova"), local("Proxima Nova"), url("../fonts/ProximaNova-SemiBold.woff2") format("woff2"), url("../fonts/ProximaNova-SemiBold.woff") format("woff");
+  src: local("ProximaNova-SemiBold"), url("../fonts/ProximaNova-SemiBold.woff2") format("woff2"), url("../fonts/ProximaNova-SemiBold.woff") format("woff");
 
   font-display: swap;
 }
@@ -65,7 +65,7 @@
   font-weight: 700;
   font-style: normal;
   font-family: "ProximaNova";
-  src: local("ProximaNova"), local("Proxima Nova"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff");
+  src: local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff");
 
   font-display: swap;
 }

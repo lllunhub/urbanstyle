@@ -6,6 +6,20 @@
   padding-bottom: 180px;
 }
 
+@media (max-width: 900px) {
+  .request {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .request {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+}
+
 .request::before {
   content: "";
   position: absolute;
@@ -36,6 +50,12 @@
   grid-row-gap: 44px;
 }
 
+@media (max-width: 480px) {
+  .request__container {
+    grid-row-gap: 20px;
+  }
+}
+
 /* Title */
 .request__title {
   justify-self: center;
@@ -44,6 +64,19 @@
   max-width: 702px;
 
   margin-left: -50px;
+}
+
+@media (max-width: 900px) {
+  .request__title {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .request__title {
+    max-width: 400px;
+    margin: 0;
+  }
 }
 
 /* Form */
@@ -61,6 +94,19 @@
   margin-left: -50px;
 }
 
+@media (max-width: 900px) {
+  .request__form {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .request__form {
+    grid-template-columns: 1fr;
+    grid-row-gap: 0;
+  }
+}
+
 /* List */
 .request__list {
   display: grid;
@@ -73,6 +119,18 @@
   padding: 0;
 
   list-style: none;
+}
+
+@media (max-width: 700px) {
+  .request__list {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+    justify-self: center;
+
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 40px;
+  }
 }
 
 /* Item */
@@ -140,6 +198,16 @@
   max-width: 288px;
 }
 
+@media (max-width: 700px) {
+  .request__wrap-submit {
+    justify-self: center;
+
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+}
+
 .request__wrap-submit p {
   margin: 0;
 
@@ -148,6 +216,12 @@
   font-weight: 300;
   font-size: 12px;
   line-height: 16px;
+}
+
+@media (max-width: 700px) {
+  .request__wrap-submit p {
+    text-align: center;
+  }
 }
 
 .request__wrap-submit p a {
@@ -180,6 +254,19 @@
   justify-self: end;
 }
 
+@media (max-width: 700px) {
+  .request__wrap-discount {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .request__wrap-discount {
+    grid-template-columns: 1fr;
+  }
+}
+
 .request__wrap-discount span {
   color: #fff;
 
@@ -196,4 +283,18 @@
 
   font-size: 16px;
   line-height: 20px;
+}
+
+@media (max-width: 700px) {
+  .request__wrap-discount span {
+    max-width: 100%;
+
+    text-align: center;
+  }
+
+  .request__wrap-discount p {
+    max-width: 100%;
+
+    text-align: center;
+  }
 }

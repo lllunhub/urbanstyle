@@ -8,6 +8,19 @@
   background-repeat: no-repeat;
 }
 
+@media (max-width: 1200px) {
+  .service {
+    padding-top: 80px;
+    padding-bottom: 140px;
+  }
+}
+
+@media (max-width: 900px) {
+  .service {
+    padding-top: 30px;
+  }
+}
+
 .webp .service {
   background-image: url("../img/service-background.webp");
 }
@@ -28,6 +41,14 @@
   text-transform: none;
 }
 
+@media (max-width: 600px) {
+  .service__title {
+    grid-column: 1 / -1;
+
+    margin-bottom: 10px;
+  }
+}
+
 /* Lead */
 .service__lead {
   align-self: end;
@@ -44,6 +65,21 @@
   text-align: right;
 }
 
+@media (max-width: 600px) {
+  .service__lead {
+    grid-column: 1 / -1;
+    justify-self: start;
+
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .service__lead {
+    font-size: 14px;
+  }
+}
+
 /* List */
 .service__list {
   display: grid;
@@ -57,6 +93,21 @@
   padding-top: 50px;
 
   list-style: none;
+}
+
+@media (max-width: 880px) {
+  .service__list {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .service__list {
+    grid-template-columns: minmax(280px, 1fr);
+    justify-items: center;
+  }
 }
 
 /* Link */
@@ -101,12 +152,15 @@
 .service__wrap {
   position: relative;
 
+  display: grid;
+
   grid-column: 1 / -1;
 }
 
 /* Form */
 .service__form {
   position: relative;
+  z-index: 2;
 
   display: grid;
   grid-row-gap: 30px;
@@ -119,12 +173,96 @@
   background: #181818;
 }
 
+@media (max-width: 1240px) {
+  .service__form {
+    justify-self: center;
+
+    width: 100%;
+  }
+}
+
 .service__form::before {
   position: absolute;
   right: -90px;
   bottom: -60px;
 
   transform: rotate(30deg);
+}
+
+@media (max-width: 1240px) {
+  .service__form::before {
+    right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .service__form::before {
+    display: none;
+  }
+}
+
+.service__puls::before {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  z-index: 0;
+
+  width: 228px;
+  height: 228px;
+  margin-left: -30px;
+  border: 1px solid #fff.14;
+  border-radius: 50%;
+
+  transform: translateX(-50%);
+}
+
+.service__puls::after {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  z-index: 0;
+
+  width: 228px;
+  height: 228px;
+  margin-left: -30px;
+  border: 1px solid #fff.14;
+  border-radius: 50%;
+
+  transform: translateX(-50%);
+  animation: radial-pulse 1s infinite;
+}
+
+@media (max-width: 1240px) {
+  .service__puls::before,
+  .service__puls::after {
+    display: none;
+  }
+}
+
+@keyframes radial-pulse {
+  0% {
+    bottom: -60px;
+
+    width: 228px;
+    height: 228px;
+
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    bottom: -120px;
+
+    width: 348px;
+    height: 348px;
+
+    opacity: 0;
+  }
 }
 
 .webp .service__form::before {
@@ -143,6 +281,19 @@
   font-size: 26px;
   font-family: var(--ProximaNova);
   line-height: 32px;
+}
+
+@media (max-width: 600px) {
+  .service__form-text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .service__form-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 /* Button */
@@ -167,6 +318,31 @@
   cursor: pointer;
 }
 
+@media (max-width: 600px) {
+  .service__button {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .service__button {
+    padding: 16px;
+
+    font-size: 14px;
+  }
+}
+
+.service__button:hover,
+.service__button:focus {
+  background: linear-gradient(180deg, #fd1919 0%, #ea0d0d 100%);
+  box-shadow: 0 0 14px rgba(255, 0, 0, .76);
+}
+
+.service__button:active {
+  background: linear-gradient(180deg, #cb0e0e 0%, #be0808 100%);
+  box-shadow: none;
+}
+
 /* Text */
 .service__text {
   position: absolute;
@@ -188,6 +364,27 @@
   transform: translateX(-50%);
 }
 
+@media (max-width: 1240px) {
+  .service__text {
+    top: auto;
+    bottom: -90px;
+
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .service__text {
+    bottom: -70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .service__text {
+    font-size: 14px;
+  }
+}
+
 .service__text::before {
   content: url("../img/service-arrow.svg");
   position: absolute;
@@ -195,6 +392,12 @@
   left: -80px;
 
   transform: rotate(135deg);
+}
+
+@media (max-width: 1240px) {
+  .service__text::before {
+    display: none;
+  }
 }
 
 .service__text b {

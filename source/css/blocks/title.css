@@ -9,6 +9,15 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 480px) {
+  .title {
+    margin-bottom: 10px;
+
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
 .title span {
   color: #fd1919;
 }

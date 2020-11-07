@@ -4,13 +4,23 @@
   const reviewList = document.querySelector(`.review__slider`);
 
   let slider1 = new Swiper(workersList, {
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 14,
     a11y: false,
-    loop: true,
     navigation: {
       nextEl: `.workers__button--next`,
       prevEl: `.workers__button--prev`,
+    },
+    breakpoints: {
+      1260: {
+        slidesPerView: 4
+      },
+      950: {
+        slidesPerView: 3
+      },
+      642: {
+        slidesPerView: 2
+      }
     }
   });
 

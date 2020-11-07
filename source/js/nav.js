@@ -72,4 +72,10 @@
       closeNav();
     }
   });
+
+  const windowWidth = document.documentElement.clientWidth;
+
+  if (windowWidth <= 960) {
+    navList.classList.add(`visually-hidden`);
+  }
 })();
