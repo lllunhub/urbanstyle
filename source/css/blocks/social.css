@@ -10,9 +10,32 @@
   list-style: none;
 }
 
+@media (max-width: 870px) {
+  .social {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    justify-self: end;
+  }
+}
+
+@media (max-width: 570px) {
+  .social {
+    grid-row-start: 2;
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+}
+
 /* Link */
 .social__link {
   display: grid;
+
+  transition: .3s;
+}
+
+.social__link:hover,
+.social__link:focus {
+  transform: translateY(-3px);
 }
 
 /* Icon */

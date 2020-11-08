@@ -44,7 +44,6 @@
     slidesPerView: 1,
     spaceBetween: 30,
     a11y: false,
-    loop: true,
     pagination: {
       el: `.review__dots`,
       type: `bullets`,

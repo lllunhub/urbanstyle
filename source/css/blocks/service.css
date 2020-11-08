@@ -112,6 +112,8 @@
 
 /* Link */
 .service__link {
+  position: relative;
+
   display: grid;
   align-items: end;
   overflow: hidden;
@@ -140,12 +142,20 @@
   grid-area: 1 / 1 / 1 / 1;
 
   transition: .3s;
-
-  /* object-fit: cover; */
 }
 
 .service__link:hover img {
   transform: scale(1.1);
+}
+
+.service__w {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+
+  width: 123px;
+  height: 123px;
+  border-radius: 50%;
 }
 
 /* Wrap */
@@ -316,6 +326,8 @@
   text-transform: uppercase;
 
   cursor: pointer;
+
+  transition: .3s;
 }
 
 @media (max-width: 600px) {

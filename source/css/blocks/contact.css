@@ -10,6 +10,37 @@
   margin-top: -380px;
 
   padding: 50px 0;
+  padding-bottom: 300px;
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: -70px;
+  left: -560px;
+
+  width: 993px;
+  height: 695px;
+
+  background-image: url("../img/contact-smoke-left.png");
+  background-repeat: no-repeat;
+
+  transform: rotate(19deg);
+}
+
+.contact::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -300px;
+
+  width: 1050px;
+  height: 734px;
+
+  background-image: url("../img/contact-smoke-right.png");
+  background-repeat: no-repeat;
+
+  transform: rotate(160deg);
 }
 
 @media (max-width: 1258px) {
@@ -17,21 +48,33 @@
     position: relative;
 
     margin-top: 0;
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .contact {
+    padding: 0;
   }
 }
 
 /* Container */
 .contact__container {
   position: relative;
-  z-index: 3;
+  z-index: 4;
 
   display: grid;
 
   max-width: 1100px;
+
+  pointer-events: none;
 }
 
 /* Info */
 .contact__info {
+  position: relative;
+  z-index: 4;
+
   display: grid;
   justify-items: center;
   justify-self: start;
@@ -40,10 +83,20 @@
   max-width: 360px;
 
   padding: 30px;
-
   border-radius: 10px;
 
   background: #181818;
+
+  pointer-events: visible;
+}
+
+@media (max-width: 540px) {
+  .contact__info {
+    width: calc(100% + 40px);
+    max-width: calc(100% + 40px);
+    margin: 0 -20px;
+    border-radius: 0;
+  }
 }
 
 /* Logo */
@@ -174,6 +227,17 @@
   display: grid;
 }
 
+.contact__icon {
+  color: #fff.8;
+
+  transition: .3s;
+}
+
+.contact__link:hover .contact__icon,
+.contact__link:focus .contact__icon {
+  color: #fd1919;
+}
+
 /* Button */
 .contact__button {
   width: 100%;
@@ -191,6 +255,19 @@
   text-align: center;
 
   cursor: pointer;
+
+  transition: .3s;
+}
+
+.contact__button:hover,
+.contact__button:focus {
+  background: linear-gradient(180deg, #fd1919 0%, #ea0d0d 100%);
+  box-shadow: 0 0 14px rgba(255, 0, 0, .76);
+}
+
+.contact__button:active {
+  background: linear-gradient(180deg, #cb0e0e 0%, #be0808 100%);
+  box-shadow: none;
 }
 
 /* Map */
@@ -200,8 +277,90 @@
   left: 50%;
   z-index: 1;
 
+  display: grid;
+
   width: 1478px;
-  height: 100%;
 
   transform: translateX(-50%);
+}
+
+@media (max-width: 880px) {
+  .contact__map {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 540px) {
+  .contact__map {
+    position: relative;
+
+    margin-left: 0;
+  }
+}
+
+.contact__map::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 36px;
+  height: 42px;
+  margin-top: 25px;
+  margin-left: -25px;
+
+  background-image: url("../img/contact-map-pin.svg");
+  background-repeat: no-repeat;
+
+  transform: translate(-50%);
+}
+
+.contact__map::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 76px;
+  height: 76px;
+  margin-top: 7px;
+  margin-left: -25px;
+  border-radius: 50%;
+
+  background-color: #e12427;
+
+  opacity: .1;
+
+  transform: translate(-50%);
+}
+
+@media (max-width: 540px) {
+  .contact__map-image {
+    object-fit: cover;
+
+    width: 100%;
+
+    height: 350px;
+  }
+}
+
+.contact__yandex {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 3;
+
+  display: grid;
+
+  width: 100%;
+  max-width: 1478px;
+  height: 572px;
+
+  transform: translateX(-50%);
+}
+
+@media (max-width: 540px) {
+  .contact__yandex {
+    height: 350px;
+  }
 }

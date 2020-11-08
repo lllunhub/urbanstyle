@@ -1,11 +1,50 @@
 /* Workers */
 .workers {
+  position: relative;
+
   padding-bottom: 120px;
 
   background-image: url("../img/workers-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.workers::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: -130px;
+
+  width: 313px;
+  height: 317px;
+
+  background-image: url("../img/speaker-left.png");
+  background-repeat: no-repeat;
+
+  transform: rotate(14deg);
+}
+
+.workers::after {
+  content: "";
+  position: absolute;
+  right: -85px;
+  bottom: -150px;
+
+  width: 295px;
+  height: 317px;
+
+  background-image: url("../img/speaker-right.png");
+  background-repeat: no-repeat;
+
+  transform: rotate(-5deg);
+}
+
+@media (max-width: 1600px) {
+  .workers::before,
+  .workers::after {
+    display: none;
+  }
 }
 
 .webp .workers {

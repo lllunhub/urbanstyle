@@ -22,6 +22,8 @@
   <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#6367d4">
   <meta name="msapplication-TileColor" content="#2b5797">
   <meta name="theme-color" content="#ffffff">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=8f057ccb-8967-4d76-9613-1a8ef9082dff&lang=ru_RU"
+    type="text/javascript"></script>
 </head>
 
 <body class="page__body">
@@ -51,12 +53,12 @@
       <!-- Навигация по странице -->
       <nav class="header__main-nav main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Услуги</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Сотрудники</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Наши работы</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">О компании</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+          <li class="main-nav__item"><a class="main-nav__link scroll" href="#service">Услуги</a></li>
+          <li class="main-nav__item"><a class="main-nav__link scroll" href="#workers">Сотрудники</a></li>
+          <li class="main-nav__item"><a class="main-nav__link scroll" href="#work">Наши работы</a></li>
+          <li class="main-nav__item"><a class="main-nav__link scroll" href="#review">Отзывы</a></li>
+          <li class="main-nav__item"><a class="main-nav__link scroll" href="#about">О компании</a></li>
+          <li class="main-nav__item"><a class="main-nav__link scroll" href="#contact">Контакты</a></li>
         </ul>
       </nav>
       <!-- Обёртка -->
@@ -123,7 +125,7 @@
     <h1 class="visually-hidden">Сайт профессионального тюнинг центра URBAN STYLE</h1>
 
     <!-- Превью -->
-    <section class="preview">
+    <section class="preview" id="preview">
       <h2 class="visually-hidden">Превью тюнинг центра</h2>
       <div class="preview__container container">
         <!--  -->
@@ -172,7 +174,7 @@
       </div>
     </section>
 
-    <section class="service">
+    <section class="service" id="service">
       <div class="service__container container">
         <!-- Заголовок -->
         <h2 class="service__title title">Услуги URBAN <span>STYLE</span></h2>
@@ -184,6 +186,7 @@
             <a class="service__link" href="/" target="_blank">
               <h3>Оклейка кузова</h3>
               <img src="img/service-01.jpg" alt="Услуга">
+              <div class="service__w"></div>
             </a>
           </li>
           <li class="service__item">
@@ -221,7 +224,7 @@
         <div class="service__wrap">
           <div class="service__form">
             <p class="service__form-text">Узнайте стоимость работ прямо сейчас, ответив на 3 простых вопроса</p>
-            <button class="service__button" type="button">Узнать стоимость</button>
+            <button class="service__button popup-open" type="button">Узнать стоимость</button>
           </div>
           <span class="service__puls"></span>
           <p class="service__text">*В подарок <b>бесплатный</b> осмотр и <b>скидка 10%</b> на все виды работ</p>
@@ -229,7 +232,7 @@
       </div>
     </section>
 
-    <section class="workers">
+    <section class="workers" id="workers">
       <div class="workers__container container">
         <!-- Заголовок -->
         <h2 class="workers__title title">Сотрудники тюнинг центра</h2>
@@ -282,7 +285,7 @@
       </div>
     </section>
 
-    <section class="work">
+    <section class="work" id="work">
       <div class="work__container container">
         <!-- Заголовок -->
         <h2 class="work__title title">Наши работы говорят сами за себя</h2>
@@ -337,7 +340,7 @@
       </div>
     </section>
 
-    <section class="request">
+    <section class="request" id="request">
       <div class="request__container container">
         <!-- Заголовок -->
         <h2 class="request__title title">Онлайн заявка</h2>
@@ -380,7 +383,7 @@
       </div>
     </section>
 
-    <section class="review">
+    <section class="review" id="review">
       <div class="review__container container">
         <!-- Заголовок -->
         <h2 class="review__title title">Отзывы клиентов</h2>
@@ -406,14 +409,17 @@
             <ul class="review__list swiper-wrapper">
               <li class="review__item swiper-slide">
                 <!-- Аватар -->
-                <img src="img/review-avatar.jpg" alt="Королёв Сергей">
+                <img class="review__img review__img--page" src="img/review-avatar.jpg" alt="Королёв Сергей">
                 <!-- Отзыв -->
                 <blockquote class="review__blockquote">
                   <cite>
-                    <span class="review__name">Королёв Сергей</span>
-                    <span class="review__city">г. Киров</span>
+                    <span class="review__name review__name--page">Королёв Сергей</span>
+                    <span class="review__city review__city--page">г. Киров</span>
                   </cite>
-                  <div class="review__wrap-text">
+                  <div class="review__wrap-text review__wrap-text--page">
+                    <p>Делал полное бронирование кузова полиуретановой антигравийной плёнкой с эффектом самовосстановления
+                      UltraVision Ultimate+ TopCoat PPF Остался очень доволен результатом. Работа непростая и я тщательно
+                      выбирал у кого буду делать бронь. Ни разу не жалею, что выбрал центр.</p>
                     <p>Делал полное бронирование кузова полиуретановой антигравийной плёнкой с эффектом самовосстановления
                       UltraVision Ultimate+ TopCoat PPF Остался очень доволен результатом. Работа непростая и я тщательно
                       выбирал у кого буду делать бронь. Ни разу не жалею, что выбрал центр.</p>
@@ -422,31 +428,41 @@
                 </blockquote>
                 <!-- Кнопка -->
                 <!-- Галерея фото -->
-                <ul class="review__galery-list">
+                <ul class="review__galery-list review__galery-list--page">
                   <li class="review__galery-item">
-                    <a href="img/review-01.jpg"><img src="img/review-01.jpg" width="151" height="105" alt="Автомобиль"></a>
+                    <a data-fslightbox="gal1" href="img/review-01.jpg"><img src="img/review-01.jpg" width="151" height="105"
+                        alt="Автомобиль"></a>
                   </li>
                   <li class="review__galery-item">
-                    <a href="img/review-02.jpg"><img src="img/review-02.jpg" width="151" height="105" alt="Автомобиль"></a>
+                    <a data-fslightbox="gal1" href="img/review-02.jpg"><img src="img/review-02.jpg" width="151" height="105"
+                        alt="Автомобиль"></a>
                   </li>
                   <li class="review__galery-item">
-                    <a href="img/review-03.jpg"><img src="img/review-03.jpg" width="151" height="105" alt="Автомобиль"></a>
+                    <a data-fslightbox="gal1" href="img/review-03.jpg"><img src="img/review-03.jpg" width="151" height="105"
+                        alt="Автомобиль"></a>
                   </li>
                   <li class="review__galery-item">
-                    <a href="img/review-04.jpg"><img src="img/review-04.jpg" width="151" height="105" alt="Автомобиль"></a>
+                    <a data-fslightbox="gal1" href="img/review-04.jpg"><img src="img/review-04.jpg" width="151" height="105"
+                        alt="Автомобиль"></a>
                   </li>
                 </ul>
               </li>
               <li class="review__item swiper-slide">
                 <!-- Аватар -->
-                <img src="img/review-avatar.jpg" alt="Королёв Сергей">
+                <img class="review__img review__img--page" src="img/review-avatar.jpg" alt="Королёв Дмитрий">
                 <!-- Отзыв -->
                 <blockquote class="review__blockquote">
                   <cite>
-                    <span class="review__name">Королёв Сергей</span>
-                    <span class="review__city">г. Киров</span>
+                    <span class="review__name review__name--page">Королёв Дмитрий</span>
+                    <span class="review__city review__city--page">г. Киров</span>
                   </cite>
-                  <div class="review__wrap-text">
+                  <div class="review__wrap-text review__wrap-text--page">
+                    <p>Делал полное бронирование кузова полиуретановой антигравийной плёнкой с эффектом самовосстановления
+                      UltraVision Ultimate+ TopCoat PPF Остался очень доволен результатом. Работа непростая и я тщательно
+                      выбирал у кого буду делать бронь. Ни разу не жалею, что выбрал центр.</p>
+                    <p>Делал полное бронирование кузова полиуретановой антигравийной плёнкой с эффектом самовосстановления
+                      UltraVision Ultimate+ TopCoat PPF Остался очень доволен результатом. Работа непростая и я тщательно
+                      выбирал у кого буду делать бронь. Ни разу не жалею, что выбрал центр.</p>
                     <p>Делал полное бронирование кузова полиуретановой антигравийной плёнкой с эффектом самовосстановления
                       UltraVision Ultimate+ TopCoat PPF Остался очень доволен результатом. Работа непростая и я тщательно
                       выбирал у кого буду делать бронь. Ни разу не жалею, что выбрал центр.</p>
@@ -455,18 +471,22 @@
                 </blockquote>
                 <!-- Кнопка -->
                 <!-- Галерея фото -->
-                <ul class="review__galery-list">
+                <ul class="review__galery-list review__galery-list--page">
                   <li class="review__galery-item">
-                    <a href="img/review-01.jpg"><img src="img/review-01.jpg" width="151" height="105" alt="Автомобиль"></a>
+                    <a data-fslightbox="gal2" href="img/review-01.jpg"><img src="img/review-01.jpg" width="151" height="105"
+                        alt="Автомобиль"></a>
                   </li>
                   <li class="review__galery-item">
-                    <a href="img/review-02.jpg"><img src="img/review-02.jpg" width="151" height="105" alt="Автомобиль"></a>
+                    <a data-fslightbox="gal2" href="img/review-02.jpg"><img src="img/review-02.jpg" width="151" height="105"
+                        alt="Автомобиль"></a>
                   </li>
                   <li class="review__galery-item">
-                    <a href="img/review-03.jpg"><img src="img/review-03.jpg" width="151" height="105" alt="Автомобиль"></a>
+                    <a data-fslightbox="gal2" href="img/review-03.jpg"><img src="img/review-03.jpg" width="151" height="105"
+                        alt="Автомобиль"></a>
                   </li>
                   <li class="review__galery-item">
-                    <a href="img/review-04.jpg"><img src="img/review-04.jpg" width="151" height="105" alt="Автомобиль"></a>
+                    <a data-fslightbox="gal2" href="img/review-04.jpg"><img src="img/review-04.jpg" width="151" height="105"
+                        alt="Автомобиль"></a>
                   </li>
                 </ul>
               </li>
@@ -478,7 +498,7 @@
       </div>
     </section>
 
-    <section class="zone">
+    <section class="zone" id="zone">
       <div class="zone__container container">
         <!-- Заголовок -->
         <h2 class="zone__title title">Уютная зона ожидания для вашего удобства</h2>
@@ -488,19 +508,19 @@
         <!-- Галерея фото -->
         <ul class="zone__list">
           <li class="zone__item">
-            <a href="img/zone-01.jpg"><img src="img/zone-01.jpg" alt="Зона отдыха"></a>
+            <a data-fslightbox="gal" href="img/zone-01.jpg"><img src="img/zone-01.jpg" alt="Зона отдыха"></a>
           </li>
           <li class="zone__item">
-            <a href="img/zone-02.jpg"><img src="img/zone-02.jpg" alt="Зона отдыха"></a>
+            <a data-fslightbox="gal" href="img/zone-02.jpg"><img src="img/zone-02.jpg" alt="Зона отдыха"></a>
           </li>
           <li class="zone__item">
-            <a href="img/zone-03.jpg"><img src="img/zone-03.jpg" alt="Зона отдыха"></a>
+            <a data-fslightbox="gal" href="img/zone-03.jpg"><img src="img/zone-03.jpg" alt="Зона отдыха"></a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contact__container container">
         <!-- Заголовок -->
         <h2 class="visually-hidden">Наши контакты</h2>
@@ -535,7 +555,7 @@
             </li>
           </ul>
           <!-- Кнопка -->
-          <button class="contact__button" type="button">Заказать звонок</button>
+          <button class="contact__button popup-open" type="button">Заказать звонок</button>
         </div>
       </div>
       <!-- Карта -->
@@ -546,7 +566,7 @@
       <div class="contact__yandex" id="map"></div>
     </section>
 
-    <section class="about visually-hidden">
+    <section class="about" id="about">
       <div class="about__container container">
         <!-- Заголовок -->
         <h2 class="about__title title">тюнинг центр «Urban Style»
@@ -554,11 +574,20 @@
         </h2>
         <!-- О центре -->
         <div class="about__wrap">
-          <p>Наша миссия — это обслуживание клиентов по доступным ценам на качественно высоком уровне</p>
-          <p>Автомобильный тюнинг — это бесконечный источник усовершенствования и способ придать своему автомобилю
-            индивидуальность и уникальный характер. Благодаря профессионализму наших специалистов вы сможете доработать
-            штатные системы своего автомобиля, усовершенствовать его внешний вид и технические характеристики, что позволит
-            максимально использовать его возможности</p>
+          <div>
+            <p>Наша миссия — это обслуживание клиентов по доступным ценам на качественно высоком уровне</p>
+            <p>Автомобильный тюнинг — это бесконечный источник усовершенствования и способ придать своему автомобилю
+              индивидуальность и уникальный характер. Благодаря профессионализму наших специалистов вы сможете доработать
+              штатные системы своего автомобиля, усовершенствовать его внешний вид и технические характеристики, что
+              позволит
+              максимально использовать его возможности</p>
+            <p>Наша миссия — это обслуживание клиентов по доступным ценам на качественно высоком уровне</p>
+            <p>Автомобильный тюнинг — это бесконечный источник усовершенствования и способ придать своему автомобилю
+              индивидуальность и уникальный характер. Благодаря профессионализму наших специалистов вы сможете доработать
+              штатные системы своего автомобиля, усовершенствовать его внешний вид и технические характеристики, что
+              позволит
+              максимально использовать его возможности</p>
+          </div>
           <button class="about__more" type="button">Показать полностью</button>
         </div>
         <!-- Изображение -->
@@ -567,7 +596,7 @@
     </section>
   </main>
 
-  <footer class="footer" hidden>
+  <footer class="footer">
     <div class="footer__container container">
       <div class="footer__nav-wrap">
         <!-- Логотип -->
@@ -576,22 +605,22 @@
         <!-- Навигация -->
         <ul class="footer__nav">
           <li class="footer__item">
-            <a class="footer__link" href="/">Услуги</a>
+            <a class="footer__link scroll" href="#service">Услуги</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="/">Сотрудники</a>
+            <a class="footer__link scroll" href="#workers">Сотрудники</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="/">Наши работы</a>
+            <a class="footer__link scroll" href="#work">Наши работы</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="/">Контакты</a>
+            <a class="footer__link scroll" href="#contact">Контакты</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="/">О компании</a>
+            <a class="footer__link scroll" href="#about">О компании</a>
           </li>
           <li class="footer__item">
-            <a class="footer__link" href="/">Отзывы</a>
+            <a class="footer__link scroll" href="#review">Отзывы</a>
           </li>
         </ul>
         <!-- Соцвети -->
@@ -607,9 +636,7 @@
           <!-- Инстаграм -->
           <li class="social__item">
             <a class="social__link" href="/" target="_blank">
-              <svg class="social__icon" width="32" height="32" aria-hidden="true">
-                <use xlink:href="#icon-instagram"></use>
-              </svg>
+              <img src="img/icon-instagram.svg" width="32" height="32" aria-hidden="true">
             </a>
           </li>
           <!-- Фейсбук -->
@@ -631,10 +658,10 @@
     </div>
   </footer>
 
-  <section class="popup" hidden>
+  <section class="popup visually-hidden">
     <!-- Закрыть попап -->
     <button class="popup__close">
-      <span>Закрыть попап</span>
+      <span class="visually-hidden">Закрыть попап</span>
       <svg class="popup__close-icon" width="22" height="22" aria-hidden="true">
         <use xlink:href="#icon-close"></use>
       </svg>
@@ -648,30 +675,67 @@
           <li>
             <label class="popup__label" for="popup-name">Введите вашем имя:</label>
             <input class="popup__input" id="popup-name" name="name" type="text" placeholder="Андрей" required>
+            <span class="popup__border"></span>
           </li>
           <!-- Телефон -->
           <li>
             <label class="popup__label" for="popup-name">Ваш номер телефона</label>
             <input class="popup__input" id="popup-phone" name="name" type="tel" placeholder="+7 (000) 000-00-00" required>
+            <span class="popup__border"></span>
           </li>
         </ul>
         <!-- Отправка -->
         <button class="popup__submit" type="submit">Перезвоните мне</button>
-        <p href="popup__consent">*Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/"
+        <p class="popup__consent">*Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/"
             target="_blank">Персональных данных</a></p>
       </form>
     </div>
     <!-- После отправки -->
-    <div class="popup__after">
+    <div class="popup__after visually-hidden">
       <h2 class="popup__title">Успешно!</h2>
       <p class="popup__text">Мы уже получили запрос и в ближайшее время перезвоним Вам Пожалуйста, оставайтесь на связи!</p>
       <button class="popup__button">Хорошо, спасибо</button>
     </div>
   </section>
 
+  <!-- Слайдер -->
+  <section class="review__wrap review__wrap--modal visually-hidden">
+    <!-- Слайды -->
+    <div class="review__slider">
+      <ul class="review__list">
+        <li class="review__item">
+          <button class="review__close" type="button">
+            <svg class="review__close-icon" width="22" height="22" aria-hidden="true">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+          <!-- Аватар -->
+          <img class="review__img review__img--modal" src="#" alt="#">
+          <!-- Отзыв -->
+          <blockquote class="review__blockquote">
+            <cite>
+              <span class="review__name review__name--modal"></span>
+              <span class="review__city review__city--modal"></span>
+            </cite>
+            <div class="review__wrap-text review__wrap-text--modal">
+            </div>
+          </blockquote>
+          <!-- Кнопка -->
+          <!-- Галерея фото -->
+          <ul class="review__galery-list review__galery-list--modal">
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <script src="js/main.min.js"></script>
   <script src="js/nav.min.js"></script>
+  <script src="js/popup.min.js"></script>
+  <script src="js/review.min.js"></script>
   <script src="js/slider.min.js"></script>
+  <script src="js/about.min.js"></script>
+  <script src="js/map.min.js"></script>
 </body>
 
 </html>

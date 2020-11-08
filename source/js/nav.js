@@ -40,9 +40,6 @@
   const navList = document.querySelector(`.nav__list`);
   const navIcon = document.querySelector(`.nav__icon`);
 
-  // navList.classList.add(`visually-hidden`);
-  // navList.inert = true;
-
   function onNavEscPress(e) {
     if (e.key === `Escape`) {
       e.preventDefault();
@@ -70,6 +67,12 @@
       openNav();
     } else {
       closeNav();
+    }
+  });
+
+  document.addEventListener(`click`, (e) => {
+    if (e.target.classList.contains(`main-nav__link`) || e.target.classList.contains(`main-nav__item`)) {
+      closeNavMenu();
     }
   });
 

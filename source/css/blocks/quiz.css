@@ -153,6 +153,12 @@
   box-shadow: none;
 }
 
+@media (max-width: 420px) {
+  .quiz__button {
+    font-size: 14px;
+  }
+}
+
 /* Text */
 .quiz__text {
   margin: 0;

@@ -4,6 +4,12 @@
   padding-bottom: 30px;
 }
 
+@media (max-width: 1258px) {
+  .footer {
+    margin-top: 0;
+  }
+}
+
 /* Container */
 .footer__container {
   display: grid;
@@ -16,7 +22,23 @@
   grid-template-columns: max-content minmax(280px, 705px) max-content;
   grid-column-gap: 20px;
   align-items: center;
+
   justify-content: space-between;
+}
+
+@media (max-width: 870px) {
+  .footer__nav-wrap {
+    grid-template-columns: 258px min-content;
+    grid-row-gap: 20px;
+  }
+}
+
+@media (max-width: 570px) {
+  .footer__nav-wrap {
+    grid-template-columns: 1fr;
+
+    margin-bottom: 20px;
+  }
 }
 
 /* Logo */
@@ -24,6 +46,13 @@
   display: grid;
 
   margin-top: -8px;
+}
+
+@media (max-width: 570px) {
+  .footer__logo {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
 }
 
 /* Nav */
@@ -40,6 +69,28 @@
   list-style: none;
 }
 
+@media (max-width: 870px) {
+  .footer__nav {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 570px) {
+  .footer__nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__nav {
+    display: grid;
+    grid-row-gap: 10px;
+    justify-items: center;
+
+    margin: 0;
+  }
+}
+
 /* Item */
 .footer__item {
   margin: 5px 15px;
@@ -53,6 +104,13 @@
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+
+  transition: .3s;
+}
+
+.footer__link:hover,
+.footer__link:focus {
+  color: #fd1919;
 }
 
 /* Copyright */
@@ -61,6 +119,14 @@
   grid-template-columns: repeat(3, max-content);
   grid-column-gap: 20px;
   justify-content: space-between;
+}
+
+@media (max-width: 570px) {
+  .footer__copyright {
+    grid-template-columns: max-content;
+    grid-row-gap: 20px;
+    justify-content: center;
+  }
 }
 
 .footer__copyright p {
@@ -73,6 +139,12 @@
   line-height: 15px;
 }
 
+@media (max-width: 570px) {
+  .footer__copyright p {
+    text-align: center;
+  }
+}
+
 .footer__copyright a {
   color: #fff.7;
 
@@ -80,4 +152,10 @@
   font-size: 12px;
   line-height: 15px;
   text-decoration: none;
+}
+
+@media (max-width: 570px) {
+  .footer__copyright a {
+    text-align: center;
+  }
 }

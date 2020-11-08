@@ -1,0 +1,284 @@
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 12;
+
+  display: grid;
+  overflow-y: auto;
+
+  width: 100%;
+  max-width: 446px;
+  max-height: 100vh;
+  padding: 20px;
+
+  background-image: url("../img/popup-bg.svg");
+  background-position: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  transform: translate(-50%, -50%);
+}
+
+.popup__close {
+  z-index: 1;
+
+  justify-self: end;
+
+  width: 22px;
+  height: 22px;
+  margin-bottom: 40px;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.popup__close-icon {
+  color: #fff.4;
+
+  pointer-events: none;
+
+  fill: none;
+
+  transition: .3s;
+}
+
+.popup__close:hover .popup__close-icon,
+.popup__close:focus .popup__close-icon {
+  color: #fff.8;
+}
+
+.popup__before {
+  display: grid;
+  align-items: start;
+}
+
+.popup__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  color: #fff;
+
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+}
+
+.popup__form {
+  display: grid;
+  justify-self: center;
+
+  width: 100%;
+
+  max-width: 250px;
+}
+
+.popup__form ul {
+  display: grid;
+  grid-row-gap: 40px;
+
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.popup__form li {
+  position: relative;
+
+  display: grid;
+  grid-row-gap: 7px;
+}
+
+.popup__label {
+  color: #bebebe;
+
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.popup__input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.popup__border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+
+  background-color: #bebebe;
+
+  transition: .3s;
+}
+
+.popup__input:hover ~ .popup__border,
+.popup__input:focus ~ .popup__border {
+  background-color: #fd1919;
+  box-shadow: 0 0 5px 2px rgba(240, 75, 36, .4);
+}
+
+.popup__input::placeholder {
+  color: #c8c8c8;
+
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.popup__submit {
+  margin-bottom: 12px;
+  padding: 24px 20px;
+  border: none;
+  border-radius: 6px;
+
+  background: linear-gradient(180deg, #fd1919 0%, #ea0d0d 100%);
+
+  color: #fff;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.popup__submit:hover,
+.popup__submit:focus {
+  background: linear-gradient(180deg, #fd1919 0%, #ea0d0d 100%);
+  box-shadow: 0 0 14px rgba(255, 0, 0, .76);
+}
+
+.popup__submit:active {
+  background: linear-gradient(180deg, #cb0e0e 0%, #be0808 100%);
+}
+
+.popup__consent {
+  margin: 0 -20px;
+  margin-bottom: 35px;
+
+  color: #bebebe;
+
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.popup__consent a {
+  color: unset;
+}
+
+.popup__after {
+  position: relative;
+
+  display: grid;
+}
+
+.popup__after::before {
+  content: "";
+  position: absolute;
+  top: -82px;
+  left: 50%;
+
+  width: 420px;
+  height: 273px;
+
+  background-image: url("../img/popup-top.png");
+  background-repeat: no-repeat;
+
+  transform: translateX(-50%);
+}
+
+.popup__after::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  bottom: -20px;
+
+  width: 264px;
+  height: 172px;
+
+  background-image: url("../img/popup-bottom.png");
+  background-repeat: no-repeat;
+}
+
+.popup__after .popup__title {
+  position: relative;
+
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.popup__text {
+  position: relative;
+
+  justify-self: center;
+
+  width: 100%;
+  max-width: 340px;
+  margin: 0;
+  margin-bottom: 105px;
+
+  color: #fff.8;
+
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+}
+
+.popup__button {
+  position: relative;
+  z-index: 1;
+
+  justify-self: center;
+
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 80px;
+  padding: 24px 20px;
+  border: none;
+  border-radius: 6px;
+
+  background: linear-gradient(180deg, #fd1919 0%, #ea0d0d 100%);
+
+  color: #fff;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  cursor: pointer;
+
+  transition: .3s;
+}
+
+.popup__button:hover,
+.popup__button:focus {
+  background: linear-gradient(180deg, #fd1919 0%, #ea0d0d 100%);
+  box-shadow: 0 0 14px rgba(255, 0, 0, .76);
+}
+
+.popup__button:active {
+  background: linear-gradient(180deg, #cb0e0e 0%, #be0808 100%);
+}
