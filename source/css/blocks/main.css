@@ -1,6 +1,10 @@
 /* Main */
 .main {
   overflow: hidden;
+}
 
-  padding-top: 128px;
+@media (min-width: 1024px) {
+  .main {
+    padding-top: 128px;
+  }
 }

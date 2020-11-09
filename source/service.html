@@ -36,7 +36,7 @@
   <header class="header">
     <div class="header__container container">
       <!-- Логотип -->
-      <a class="header__logo logo">
+      <a href="/" class="header__logo logo">
         <picture>
           <source media="(max-width: 904px)" srcset="img/logo-small.svg">
           <img class="logo__image logo__image--header" src="img/logo-big.svg" alt="Логотип URBAN STYLE">
@@ -123,19 +123,22 @@
   </header>
 
   <main class="main">
-    <h1 class="visually-hidden">Сайт профессионального тюнинг центра URBAN STYLE</h1>
+    <section class="crumbs">
+      <div class="crumbs__container container">
+        <a href="/">Главная</a>
+        <span>Главная</span>
+      </div>
+    </section>
 
-    <!-- Превью -->
-    <section class="preview" id="preview">
-      <h2 class="visually-hidden">Превью тюнинг центра</h2>
-      <div class="preview__container container">
-        <!--  -->
-        <div class="preview__wrap">
-          <!-- Лид -->
-          <p class="preview__title">Профессиональный тюнинг центр</p>
-          <p class="preview__lead">Работаем с автомобилями <br> от бюджетного до премиум класса</p>
+    <section class="item">
+      <div class="item__container container">
+        <div class="item__wrap">
+          <h1 class="item__title">Оклейка кузова</h1>
+          <p class="item__lead">от 1000 рублей</p>
+          <p class="item__text">Каждому автовладельцу хочется сохранить внешний вид автомобиля в идеальном состоянии. И
+            теперь это стало возможно благодаря защитным антигравийным плёнкам.</p>
           <!-- Список информации -->
-          <ul class="preview__list">
+          <ul class="item__list preview__list">
             <li class="preview__item">
               <p class="preview__text">Работаем со всеми марками автомобилей</p>
               <picture>
@@ -163,127 +166,68 @@
           </ul>
         </div>
         <!-- Форма квиз -->
-        <div class="preview__form quiz">
-          <h3 class="quiz__title">Узнайте стоимость работ прямо сейчас, ответив&nbsp;на 3 вопроса</h3>
-          <p class="quiz__subtitle">Тест займёт не больше минуты</p>
-          <p class="quiz__bonus">В подарок <b>бесплатный</b> осмотр и <b>скидка 10%</b> на все виды
-            работ</p>
-          <button class="quiz__button" type="button">Узнать стоимость</button>
-          <p class="quiz__text">Или просто позвоните нам</p>
-          <a class="quiz__phone" href="tel:+7 (8332) 43-17-17">+7 (8332) 43-17-17</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="service" id="service">
-      <div class="service__container container">
-        <!-- Заголовок -->
-        <h2 class="service__title title">Услуги URBAN <span>STYLE</span></h2>
-        <!-- Лид -->
-        <p class="service__lead">На все услуги нашего тюнинг центра предоставляется официальная гарантия</p>
-        <!-- Список услуг -->
-        <ul class="service__list">
-          <li class="service__item">
-            <a class="service__link" href="/" target="_blank">
-              <h3>Оклейка кузова</h3>
-              <img src="img/service-01.jpg" alt="Услуга">
-              <div class="service__w"></div>
-            </a>
-          </li>
-          <li class="service__item">
-            <a class="service__link" href="/" target="_blank">
-              <h3>Шумоизоляция</h3>
-              <img src="img/service-02.jpg" alt="Услуга">
-            </a>
-          </li>
-          <li class="service__item">
-            <a class="service__link" href="/" target="_blank">
-              <h3>Тонировка</h3>
-              <img src="img/service-03.jpg" alt="Услуга">
-            </a>
-          </li>
-          <li class="service__item">
-            <a class="service__link" href="/" target="_blank">
-              <h3>Установка сигнализации</h3>
-              <img src="img/service-04.jpg" alt="Услуга">
-            </a>
-          </li>
-          <li class="service__item">
-            <a class="service__link" href="/" target="_blank">
-              <h3>Автозвук</h3>
-              <img src="img/service-05.jpg" alt="Услуга">
-            </a>
-          </li>
-          <li class="service__item">
-            <a class="service__link" href="/" target="_blank">
-              <h3>Детейлинг</h3>
-              <img src="img/service-06.jpg" alt="Услуга">
-            </a>
-          </li>
-        </ul>
-        <!-- Форма -->
-        <div class="service__wrap">
-          <div class="service__form">
-            <p class="service__form-text">Узнайте стоимость работ прямо сейчас, ответив на 3 простых вопроса</p>
-            <button class="service__button popup-open" type="button">Узнать стоимость</button>
+        <div class="item-form">
+          <div class="image">
+            <img src="img/service-discount.svg" alt="Скидка">
           </div>
-          <span class="service__puls"></span>
-          <p class="service__text">*В подарок <b>бесплатный</b> осмотр и <b>скидка 10%</b> на все виды работ</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="workers" id="workers">
-      <div class="workers__container container">
-        <!-- Заголовок -->
-        <h2 class="workers__title title">Сотрудники тюнинг центра</h2>
-        <!-- Лид -->
-        <p class="workers__lead">В нашем тюнинг центре работают профессионалы своего дела с многолетним стажем работы.
-          Каждый сотрудник нашего центра повышает квалификацию у лучших производителей</p>
-        <!-- Слайдер -->
-        <div class="workers__wrap">
-          <!-- Кнопки -->
-          <div class="workers__buttons">
-            <button class="workers__button workers__button--prev button" type="button">
-              <span class="visually-hidden">Предыдующий слайд</span>
-              <svg class="workers__icon" width="44" height="44" aria-hidden="true">
-                <use xlink:href="#icon-button"></use>
-              </svg>
-            </button>
-            <button class="workers__button workers__button--next button" type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-              <svg class="workers__icon" width="44" height="44" aria-hidden="true">
-                <use xlink:href="#icon-button"></use>
-              </svg>
-            </button>
-          </div>
-          <!-- Слайды -->
-          <div class="workers__slider swiper-container">
-            <ul class="workers__list swiper-wrapper">
-              <li class="workers__item swiper-slide">
-                <h3>Чертков Александр</h3>
-                <p>Автоэлектрик</p>
-                <img src="img/workers-01.png" alt="Сотрудник">
+          <h3 class="item-form__title">Специальное предложение: Cкидка на услугу <span>10%</span></h3>
+          <!-- Форма -->
+          <form class="item__form">
+            <ul class="item__list">
+              <!-- Имя -->
+              <li class="item__item">
+                <label class="item__label" for="item-name">Введите вашем имя:</label>
+                <input class="item__input" id="item-name" name="name" type="text" placeholder="Андрей" required>
+                <span class="item__border"></span>
               </li>
-              <li class="workers__item swiper-slide">
-                <h3>Скутин Василий</h3>
-                <p>Тонировщик</p>
-                <img src="img/workers-02.png" alt="Сотрудник">
+              <!-- Телефон -->
+              <li class="item__item">
+                <label class="item__label" for="item-phone">Ваш номер телефона</label>
+                <input class="item__input" id="item-phone" name="phone" type="tel" placeholder="+7 (000) 000-00-00"
+                  required>
+                <span class="item__border"></span>
               </li>
-              <li class="workers__item swiper-slide">
-                <h3>Глушков Владимир</h3>
-                <p>Специалист по установке дополнительного оборудования</p>
-                <img src="img/workers-03.png" alt="Сотрудник">
-              </li>
-              <li class="workers__item swiper-slide">
-                <h3>Бакулев Дмитрий</h3>
-                <p>Специалист по установке дополнительного оборудования</p>
-                <img src="img/workers-04.png" alt="Сотрудник">
+              <!-- Марка авто -->
+              <li class="item__item">
+                <label class="item__label" for="item-auto">Марка авто</label>
+                <input class="item__input" id="item-auto" name="auto" type="text" placeholder="Mercedes" required>
+                <span class="item__border"></span>
               </li>
             </ul>
+            <!-- Отправка -->
+            <button class="item__submit" type="submit">Оставить заявку</button>
+          </form>
+          <p class="item-form__text">Или просто позвоните нам</p>
+          <a class="item-form__phone" href="tel:+7 (8332) 43-17-17">+7 (8332) 43-17-17</a>
+        </div>
+        <div class="content">
+          <div class="content__1">
+            <h2>Что такое антигравийная пленка?</h2>
+            <p>Это прочная высокоэффективная абсолютно прозрачная пленка, которая незаметна на автомобиле толщиной 200
+              микрон.
+              Она не мутнеет и не желтеет со временем. Ее можно мыть и натирать автовоском</p>
+          </div>
+          <div class="content__2">
+            <h2>Зачем Вам это нужно?</h2>
+            <ul>
+              <li>Антигравийные пленки защищают бампера от сколов и царапин из-за неудачной парковки и мелких аварий</li>
+              <li>Защитные пленки сохраняют оригинальное лакокрасочное покрытие: защищают от гравия, щебня, остатков
+                насекомых, кислотных
+                осадков</li>
+              <li>Защищают кромки дверей от сколов, а пространство
+                под ручками дверей от царапин</li>
+              <li>Защищают пороги от сколов и царапин от каблуков, от воздействия реагентов</li>
+              <li>Антигравийные пленки предохраняют от повреждений при загрузке/разгрузке багажника</li>
+              <li>Увеличивает стоимость Вашего автомобиля при продаже</li>
+            </ul>
+          </div>
+          <div class="content__3">
+            <h2>В нашем тюнинг центре Вы можете нанести защитную пленку
+              на весь кузов лучшими пленками по доступным ценам!</h2>
           </div>
         </div>
       </div>
+
     </section>
 
     <section class="work" id="work">
@@ -338,49 +282,6 @@
           <!-- Доты -->
           <div class="work__dots"></div>
         </div>
-      </div>
-    </section>
-
-    <section class="request" id="request">
-      <div class="request__container container">
-        <!-- Заголовок -->
-        <h2 class="request__title title">Онлайн заявка</h2>
-        <!-- Форма -->
-        <form class="request__form">
-          <ul class="request__list">
-            <!-- Имя -->
-            <li class="request__item">
-              <label class="request__label" for="request-name">Введите вашем имя:</label>
-              <input class="request__input" id="request-name" name="name" type="text" placeholder="Андрей" required>
-              <span class="request__border"></span>
-            </li>
-            <!-- Телефон -->
-            <li class="request__item">
-              <label class="request__label" for="request-phone">Ваш номер телефона</label>
-              <input class="request__input" id="request-phone" name="phone" type="tel" placeholder="+7 (000) 000-00-00"
-                required>
-              <span class="request__border"></span>
-            </li>
-            <!-- Выбор даты -->
-            <li class="request__item">
-              <label class="request__label" for="request-date">Выберите дату</label>
-              <input class="request__input datepicker-here" id="request-date" name="date" type="text"
-                placeholder="1 Ноября 2020 г." required autocomplete="off" data-date-format="d MM yyyy">
-              <span class="request__border"></span>
-            </li>
-          </ul>
-          <!-- Отправка -->
-          <div class="request__wrap-submit">
-            <button class="request__submit" type="submit">Оставить заявку</button>
-            <p>*Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/" target="_blank">Персональных данных</a>
-            </p>
-          </div>
-          <!-- Скидка -->
-          <div class="request__wrap-discount">
-            <span>10%</span>
-            <p>Оставьте заявку на нашем сайте и получите скидку</p>
-          </div>
-        </form>
       </div>
     </section>
 
@@ -737,10 +638,7 @@
   <script src="js/slider.min.js"></script>
   <script src="js/about.min.js"></script>
   <script src="js/map.min.js"></script>
-  <script>
-    const picker = datepicker('.request-date');
-    picker.hide();
-  </script>
+
 </body>
 
 </html>

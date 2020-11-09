@@ -1,0 +1,39 @@
+.crumbs {
+  padding-top: 30px;
+}
+
+.crumbs a {
+  margin-right: 13px;
+
+  color: #fff.6;
+
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.crumbs span {
+  position: relative;
+
+  padding-left: 17px;
+
+  color: #fff;
+
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.crumbs span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+
+  background-color: #fff;
+
+  transform: translateY(-50%);
+}
