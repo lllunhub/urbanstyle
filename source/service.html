@@ -230,6 +230,36 @@
 
     </section>
 
+    <section class="req">
+      <div class="req__container container">
+        <h2 class="req__title">Онлайн заявка на оклейку кузова</h2>
+        <form class="req__form">
+          <ul class="req__list">
+            <li class="req__item">
+              <label class="req__label" for="req-name">Введите вашем имя:</label>
+              <input class="req__input" id="req-name" name="name" type="text" placeholder="Андрей" required>
+              <span class="req__border"></span>
+            </li>
+            <li class="req__item">
+              <label class="req__label" for="req-phone">Ваш номер телефона</label>
+              <input class="req__input" id="req-phone" name="phone" type="tel" placeholder="+7 (000) 000-00-00" required>
+              <span class="req__border"></span>
+            </li>
+            <li class="req__item">
+              <label class="req__label" for="req-auto">Марка авто</label>
+              <input class="req__input" id="req-auto" name="auto" type="text" placeholder="Mercedes" required>
+              <span class="req__border"></span>
+            </li>
+          </ul>
+          <div class="req__wrap">
+            <button class="req__submit" type="submit">Оставить заявку</button>
+            <p class="req__text">*Нажимая на кнопку, Вы соглашаетесь с политикой обработки <a href="/"
+                target="_blank">Персональных данных</a></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <section class="work" id="work">
       <div class="work__container container">
         <!-- Заголовок -->
@@ -285,7 +315,7 @@
       </div>
     </section>
 
-    <section class="review" id="review">
+    <section class="review kkk" id="review">
       <div class="review__container container">
         <!-- Заголовок -->
         <h2 class="review__title title">Отзывы клиентов</h2>
@@ -638,6 +668,7 @@
   <script src="js/slider.min.js"></script>
   <script src="js/about.min.js"></script>
   <script src="js/map.min.js"></script>
+  <script src="js/discount.min.js"></script>
 
 </body>
 
